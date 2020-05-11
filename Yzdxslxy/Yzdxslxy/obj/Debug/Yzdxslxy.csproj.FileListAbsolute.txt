@@ -1,0 +1,6 @@
+C:\Users\pansu\documents\visual studio 2013\Projects\yzdxslxy\Yzdxslxy\bin\Yzdxslxy.dll.config
+C:\Users\pansu\documents\visual studio 2013\Projects\yzdxslxy\Yzdxslxy\bin\Yzdxslxy.dll
+C:\Users\pansu\documents\visual studio 2013\Projects\yzdxslxy\Yzdxslxy\bin\Yzdxslxy.pdb
+C:\Users\pansu\documents\visual studio 2013\Projects\yzdxslxy\Yzdxslxy\obj\Debug\Yzdxslxy.dll
+C:\Users\pansu\documents\visual studio 2013\Projects\yzdxslxy\Yzdxslxy\obj\Debug\Yzdxslxy.pdb
+C:\Users\pansu\documents\visual studio 2013\Projects\yzdxslxy\Yzdxslxy\obj\Debug\Yzdxslxy.csprojResolveAssemblyReference.cache

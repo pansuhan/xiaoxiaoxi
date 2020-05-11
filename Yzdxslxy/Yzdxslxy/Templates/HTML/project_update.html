@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目信息</title>
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="shortcut icon" href="#" />
+    <script type="text/javascript" src="../easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../JS/datagridRowEdit.js"></script>
+    <script type="text/javascript" src="../JS/project/project_add.js"></script>
+</head>
+<body>
+    <form id="projectInfo_form" method="post">
+        <table cellpadding="5">
+            <tr>
+                <td class="left">项目名称:</td>
+                <td class="right">
+                    <input class="easyui-textbox" type="text" id="project_name" name="project_name" data-options="required:true" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">项目级别:</td>
+                <td class="right">
+                    <select class="easyui-combogrid" id="project_grade" name="project_grade"></select>
+                </td>
+            </tr>
+            <tr id="project_leaders_tr">
+                <td class="left">负责人人数:</td>
+                <td class="right">
+                    <select class="easyui-combobox" id="project_leadersnum" name="project_leadersnum">
+                        <option value="1" selected="selected">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr id="project_participantnum_tr">
+                <td class="left">参与人人数:</td>
+                <td class="right">
+                    <select class="easyui-combobox" id="project_participantnum" name="project_participantnum">
+                        <option value="1" selected="selected">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">立项时间:</td>
+                <td class="right"><input class="easyui-datebox" type="text" id="project_time" name="project_time" data-options="required:true" /></td>
+            </tr>
+            <tr>
+                <td class="left">起时间:</td>
+                <td class="right"><input class="easyui-datebox" type="text" id="project_starttime" name="project_starttime" data-options="required:true" /></td>
+            </tr>
+            <tr>
+                <td class="left">止时间:</td>
+                <td class="right"><input class="easyui-datebox" type="text" id="project_endtime" name="project_endtime" data-options="required:true" /></td>
+            </tr>
+            <tr>
+                <td class="left">年度:</td>
+                <td class="right">
+                    <input id="yearChoose" name="yearChoose" class="easyui-combobox" type="text" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">总经费/(万元):</td>
+                <td class="right"><input class="easyui-numberbox" type="text" id="project_totalfunds" name="project_totalfunds" data-options="required:true" /></td>
+            </tr>
+            <tr>
+                <td class="left">到账经费/(万元):</td>
+                <td class="right"><input class="easyui-numberbox" type="text" id="project_finishedfunds" name="project_finishedfunds" data-options="required:true" /></td>
+            </tr>
+            <tr>
+                <td class="left">批准编号:</td>
+                <td class="right"><input class="easyui-textbox" type="text" id="project_identifier" name="project_identifier" data-options="required:true" /></td>
+            </tr>
+            <tr>
+                <td class="left">备注:</td>
+                <td class="right"><input class="easyui-textbox" type="text" id="project_remarks" name="project_remarks" data-options="multiline:true" style="width: 500px;height:60px" /></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
+<style>
+    .left {
+        width: 110px;
+    }
+
+    .right input {
+        width: 500px;
+    }
+
+    .right select {
+        width: 500px;
+    }
+</style>

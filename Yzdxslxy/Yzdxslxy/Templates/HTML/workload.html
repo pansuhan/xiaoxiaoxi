@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>工作量汇总</title>
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="shortcut icon" href="#" />
+    <script type="text/javascript" src="../easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../JS/workload/workload.js"></script>
+</head>
+<body>
+    
+    <div style="width:1155px">
+        <table id="workload_datagrid" class="easyui-datagrid" title="工作量汇总"></table>
+    </div>
+    <div id="update_type_dialog" style="overflow:hidden;width:700px;height:auto">
+        <table id="type_datagrid" class="easyui-datagrid"></table>
+        <div id="type_tb" style="height:auto">
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="type_add()">增加</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true" onclick="type_remove()">删除</a>
+            <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-save',plain:true" onclick="type_update()">修改</a>
+        </div>
+    </div>
+    <div id="workload_tb" style="height:auto;">
+        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="update_type()">修改类别</a>
+    </div>
+    <!--添加等级类别对应的dialog-->
+    <div id="update_type_add_dialog" style="overflow:hidden;width:700px;height:auto">
+        <form id="update_type_add_form" method="post" action="">
+            <table cellpadding="5">
+                <tr>
+                    <td class="left">等级类别:</td>
+                    <td class="right">
+                        <select class="easyui-combobox" id="add_type" name="add_type" data-options="required:true">
+                            <option value="" selected="selected"></option>
+                            <option value="学术论文">学术论文</option>
+                            <option value="专著教材">专著教材</option>
+                            <option value="科研项目">科研项目</option>
+                            <option value="获奖成果">获奖成果</option>
+                            <option value="知识产权">知识产权</option>
+                            <option value="本科生研究工作量">本科生研究工作量</option>
+                            <option value="研究生研究工作量">研究生研究工作量</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">等级名称:</td>
+                    <td class="right">
+                        <input id="add_name" name="add_name" class="easyui-textbox" data-options="required:true" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">业绩点:</td>
+                    <td class="right">
+                        <input id="add_point" name="add_point" class="easyui-numberbox" data-options="required:true" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">项目类别系数:</td>
+                    <td class="right">
+                        <input id="add_ratio" name="add_ratio" class="easyui-numberbox" value="1" data-options="required:true" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!--添加等级类别对应的dialog-->
+    <!--修改等级类别对应的dialog-->
+    <div id="update_type_update_dialog" style="overflow:hidden;width:700px;height:auto">
+        <form id="update_type_update_form" method="post" action="">
+            <table cellpadding="5">
+                <tr>
+                    <td class="left">等级类别:</td>
+                    <td class="right">
+                        <select class="easyui-combobox" id="update_type" name="update_type" data-options="required:true">
+                            <option value="" selected="selected"></option>
+                            <option value="学术论文">学术论文</option>
+                            <option value="专著教材">专著教材</option>
+                            <option value="科研项目">科研项目</option>
+                            <option value="获奖成果">获奖成果</option>
+                            <option value="知识产权">知识产权</option>
+                            <option value="本科生研究工作量">本科生研究工作量</option>
+                            <option value="研究生研究工作量">研究生研究工作量</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">等级名称:</td>
+                    <td class="right">
+                        <input id="update_name" name="update_name" class="easyui-textbox" data-options="required:true" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">业绩点:</td>
+                    <td class="right">
+                        <input id="update_point" name="update_point" class="easyui-numberbox" data-options="required:true" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="left">项目类别系数:</td>
+                    <td class="right">
+                        <input id="update_ratio" name="update_ratio" class="easyui-numberbox" value="1" data-options="required:true" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <!--修改等级类别对应的dialog-->
+</body>
+</html>
+<style>
+    .left {
+        width: 110px;
+    }
+
+    .right input {
+        width: 500px;
+    }
+
+    .right select {
+        width: 500px;
+    }
+</style>

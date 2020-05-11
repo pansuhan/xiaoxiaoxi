@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>知识产权成果信息</title>
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="shortcut icon" href="#" />
+    <script type="text/javascript" src="../easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../JS/intellectualProperty/intellectualProperty.js"></script>
+</head>
+<body>
+    <div style="width:1155px">
+        <table id="intellectualProperty_datagrid" class="easyui-datagrid" title="知识产权成果信息"></table>
+    </div>
+    <div id="intellectualProperty_tb" style="height:auto;">
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-add',plain:true" onclick="intellectualProperty_add()">增加</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-undo',plain:true" onclick="intellectualProperty_reject()">删除</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true" onclick="intellectualProperty_update()">修改</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" data-options="iconCls:'icon-search',plain:true" onclick="intellectualProperty_search()">查询</a>
+    </div>
+    <div id="intellectualProperty_add_dialog" style="overflow: hidden;">
+        <iframe id="intellectualProperty_add_iframe" frameborder="0" scrolling="auto" height="100%" width="100%"></iframe>
+    </div>
+    <div id="intellectualProperty_update_dialog" style="overflow: hidden;">
+        <iframe id="intellectualProperty_update_iframe" frameborder="0" scrolling="auto" height="100%" width="100%"></iframe>
+    </div>
+    <div id="intellectualProperty_search_dialog" style="overflow: hidden;">
+        <iframe id="intellectualProperty_search_iframe" frameborder="0" scrolling="auto" height="100%" width="100%"></iframe>
+    </div>
+</body>
+</html>

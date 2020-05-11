@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>查询论文信息</title>
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <script type="text/javascript" src="../easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../JS/paper/paper_add.js"></script>
+</head>
+
+<body>
+    <form id="search_paper_info" method="post" action="">
+        <table cellpadding="5">
+            <tr>
+                <td class="left" style="width: 110px;">论文名称:</td>
+                <td class="right">
+                    <input id="search_paper_title" name="search_paper_title" class="easyui-textbox" style="width: 400px;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left" style="width: 110px;">作者:</td>
+                <td class="right">
+                    <input id="search_paper_author" name="search_paper_author" class="easyui-textbox" style="width: 400px;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left" style="width: 110px;">工资号:</td>
+                <td class="right">
+                    <input id="search_paper_wagenumber" name="search_paper_wagenumber" class="easyui-textbox" style="width: 400px;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left" style="width: 110px;">发表刊物:</td>
+                <td class="right">
+                    <input id="search_paper_journal" name="search_paper_journal" class="easyui-textbox" style="width: 400px;" />
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left" style="width: 110px;">发表时间:</td>
+                <td class="right">
+                    <input id="search_paper_date" name="search_paper_date" class="easyui-datebox" style="width: 400px;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left" style="width: 110px;">收录级别:</td>
+                <td class="right">
+                    <select class="easyui-combobox" id="search_paper_grade" name="search_paper_grade" style="width: 400px;">
+                        <option value="" selected="selected"></option>
+                        <option value="Nature、Science、Cell等期刊论文">Nature、Science、Cell等期刊论文</option>
+                        <option value="Nature、Science、Cell等子刊论文">Nature、Science、Cell等子刊论文</option>
+                        <option value="SCI一区论文、NI期刊论文">SCI一区论文、NI期刊论文</option>
+                        <option value="SCI二区论文">SCI二区论文</option>
+                        <option value="SCI三区论文">SCI三区论文</option>
+                        <option value="SCI四区论文">SCI四区论文</option>
+                        <option value="EI收录期刊论文">EI收录期刊论文</option>
+                        <option value="EI收录会议论文">EI收录会议论文</option>
+                        <option value="ISTP收录论文">ISTP收录论文</option>
+                        <option value="北大中文核心、国外期刊论文">北大中文核心、国外期刊论文</option>
+                        <option value="国内期刊论文">国内期刊论文</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="left" style="width: 110px;">备注:</td>
+                <td class="right"><input id="search_paper_remarks" name="search_paper_remarks" class="easyui-textbox" style="width: 400px;" /></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+
+</html>

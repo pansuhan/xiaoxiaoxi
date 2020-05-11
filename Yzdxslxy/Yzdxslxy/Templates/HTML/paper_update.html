@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>论文信息修改</title>
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <script type="text/javascript" src="../easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../JS/datagridRowEdit.js"></script>
+    <script type="text/javascript" src="../JS/paper/paper_add.js"></script>
+</head>
+
+<body>
+    <form id="paper_info" method="post" action="">
+        <table cellpadding="5">
+            <tr>
+                <td class="left">论文名称:</td>
+                <td class="right">
+                    <input id="paper_title" name="paper_title" class="easyui-textbox" data-options="required:true" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">作者人数:</td>
+                <td class="right">
+                    <select class="easyui-combobox" id="author_num" name="author_num">
+                        <option value="1" selected="selected">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <table id="datagrid" class="easyui-datagrid" style="height:auto;width: 620px;"></table>
+        <table id="paper_info_table" cellpadding="5">
+            <tr>
+                <td class="left">发表刊物:</td>
+                <td class="right">
+                    <input id="paper_journal" name="paper_journal" class="easyui-textbox" data-options="required:true" />
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left">发表时间:</td>
+                <td class="right">
+                    <input id="paper_date" name="paper_date" class="easyui-datebox" data-options="required:true" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">发表刊物卷期:</td>
+                <td class="right"><input id="paper_journal_vol" name="paper_journal_vol" class="easyui-textbox" /></td>
+            </tr>
+            <tr>
+                <td class="left">起页码:</td>
+                <td class="right"><input id="paper_startpage" name="paper_startpage" class="easyui-numberbox" /></td>
+            </tr>
+            <tr>
+                <td class="left">止页码:</td>
+                <td class="right"><input id="paper_endpage" name="paper_endpage" class="easyui-numberbox" /></td>
+            </tr>
+            <tr>
+                <td class="left">收录级别:</td>
+                <td class="right">
+                    <select class="easyui-combogrid" id="paper_grade" name="paper_grade"></select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left">单位信息:</td>
+                <td class="right" align="left">
+                    <label><input type="radio" name="paper_departmentinfo" value="扬州大学为第一通讯作者单位" style="width:40px">扬州大学为第一通讯作者单位</label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="right" align="left">
+                    <label><input type="radio" name="paper_departmentinfo" id="paper_departmentinfo" value="扬州大学为第一作者单位" style="width:40px">扬州大学为第一作者单位</label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="right" align="left">
+                    <label><input type="radio" name="paper_departmentinfo" value="扬州大学为其他合作单位" style="width:40px">扬州大学为其他合作单位</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="right" align="left">
+                    <label><input type="radio" name="paper_departmentinfo" value="通讯作者为外单位" style="width:40px">通讯作者为外单位</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left">年度:</td>
+                <td class="right">
+                    <input id="yearChoose" name="yearChoose" class="easyui-combobox" type="text" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">备注:</td>
+                <td class="right"><input id="paper_remarks" name="paper_remarks" class="easyui-textbox" data-options="multiline:true" style="width: 500px;height:60px" /></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
+<style>
+    .left {
+        width: 110px;
+    }
+
+    .right input {
+        width: 500px;
+    }
+
+    .right select {
+        width: 500px;
+    }
+</style>

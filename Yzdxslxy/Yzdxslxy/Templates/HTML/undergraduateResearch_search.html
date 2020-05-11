@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>本科生教学研究工作量</title>
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="shortcut icon" href="#" />
+    <script type="text/javascript" src="../easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../JS/undergraduateResearch/undergraduateResearch_add.js"></script>
+
+</head>
+<body>
+    <form id="undergraduateResearchInfo_form" method="post" action="">
+        <table cellpadding="5">
+            <tr>
+                <td class="left">名称:</td>
+                <td class="right">
+                    <input id="undergraduateResearch_title" name="undergraduateResearch_title" class="easyui-textbox"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left">作者名称:</td>
+                <td class="right">
+                    <input id="undergraduateResearch_personname" name="undergraduateResearch_personname" class="easyui-textbox"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left">类别:</td>
+                <td class="right">
+                    <select class="easyui-combogrid" id="undergraduateResearch_grade" name="undergraduateResearch_grade"></select>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">取得时间:</td>
+                <td class="right">
+                    <input class="easyui-datebox" type="text" id="undergraduateResearch_time" name="undergraduateResearch_time"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="left">备注:</td>
+                <td class="right"><input class="easyui-textbox" type="text" id="undergraduateResearch_remarks" name="undergraduateResearch_remarks" data-options="multiline:true" style="width: 500px;height:60px" /></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
+<style>
+    .left {
+        width: 110px;
+    }
+
+    .right input {
+        width: 500px;
+    }
+
+    .right select {
+        width: 500px;
+    }
+</style>

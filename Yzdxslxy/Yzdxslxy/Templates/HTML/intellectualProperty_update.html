@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>知识产权成果信息</title>
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+    <link rel="shortcut icon" href="#" />
+    <script type="text/javascript" src="../easyui/jquery.min.js"></script>
+    <script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../JS/intellectualProperty/intellectualProperty_add.js"></script>
+</head>
+<body>
+    <form id="intellectualPropertyInfo_form" method="post">
+        <table cellpadding="5">
+            <tr>
+                <td class="left">产权名称:</td>
+                <td class="right">
+                    <input class="easyui-textbox" type="text" id="intellectualProperty_name" name="intellectualProperty_name" data-options="required:true" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">产权登记号:</td>
+                <td class="right">
+                    <input class="easyui-textbox" type="text" id="intellectualProperty_identifier" name="intellectualProperty_identifier" data-options="required:true" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">产权类别:</td>
+                <td class="right">
+                    <select class="easyui-combogrid" id="intellectualProperty_type" name="intellectualProperty_type"></select>
+                </td>
+            </tr>
+            <tr>
+                <td class="left">权利人:</td>
+                <td class="right">
+                    <input class="easyui-textbox" type="text" id="intellectualProperty_personname" name="intellectualProperty_personname" data-options="required:true" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">取得时间:</td>
+                <td class="right">
+                    <input class="easyui-datebox" type="text" id="intellectualProperty_datetime" name="intellectualProperty_datetime" data-options="required:true" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">年度:</td>
+                <td class="right">
+                    <input id="yearChoose" name="yearChoose" class="easyui-combobox" type="text" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="left">备注:</td>
+                <td class="right">
+                    <input class="easyui-textbox" type="text" id="intellectualProperty_remarks" name="intellectualProperty_remarks" data-options="multiline:true" style="width: 500px;height:60px" />
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
+<style>
+    .left {
+        width: 110px;
+    }
+
+    .right input {
+        width: 500px;
+    }
+
+    .right select {
+        width: 500px;
+    }
+</style>
